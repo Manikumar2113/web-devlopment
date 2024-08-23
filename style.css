@@ -1,0 +1,93 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+/* Main container */
+#main {
+    position: relative;
+    min-height: 100vh; /* Ensure the container takes up at least the full viewport height */
+}
+
+/* Top Section */
+.top {
+    background-color: #222;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Bottom Section */
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+}
+
+/* Left Section */
+.left {
+    width: 30%;
+}
+
+.left h1 {
+    font-size: 2rem;
+}
+
+.left p {
+    font-size: 1rem;
+}
+
+/* Right Section */
+.right {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.up, .down {
+    min-height: 20vh;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 30px;
+    color: white;
+}
+
+.up {
+    background-image: url('https://images.unsplash.com/photo-1560315925-4f6963360401?fit=crop');
+}
+
+.down {
+    background-image: url('https://images.unsplash.com/photo-1586769852836-bc069f19e1be?fit=crop');
+}
+
+/* Overlay */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    padding: 15px;
+}
+
+.overlay p {
+    margin: 0;
+    padding: 5px;
+    color: black;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    .bottom {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .right {
+        width: 100%;
+    }
+}
